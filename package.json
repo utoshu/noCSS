@@ -1,5 +1,5 @@
 {
-  "name": "nocss",
+  "name": "no-css",
   "version": "1.0.0",
   "description": "noCSS is a CSS framework to write simple websites using normal HTML",
   "main": "nocss.css",
