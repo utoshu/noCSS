@@ -1,0 +1,297 @@
+@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.css');
+:root {
+    --sans-font: "Inter", sans-serif;
+    --mono-font: monospace, "Lucida Console";
+
+    --bg: #ececec;
+    --accent-bg: #dddddd;
+    --accent-hover: #c6c6c6;
+    --text: #101010;
+    --text-light: #2b2b2b;
+    --border: #202020;
+    --select-bg: #6121a6;
+    --select-color: #ffffff;
+    --link: #200ba8;
+    --link-select-color: #000000;
+    --disabled: #efefef;
+    --article-bg: #e8e8e8;
+    --input-bg: #d1d1d1;
+    --marked: #6b00de;
+    }
+@media (prefers-color-scheme: light)
+{
+    :root {
+        --bg: #101010;
+        --accent-bg: #141414;
+        --accent-hover: #202020;
+        --text: #f5f4f4;
+        --text-light: #e6e6e6;
+        --border: #e6e6e6;
+        --select-bg: #6121a6;
+        --select-color: #ffffff;
+        --link: #644cff;
+        --link-select-color: #8778e4;
+        --disabled: #111;
+        --article-bg: #121212;
+        --input-bg: #171717;
+        --marked: #6b00de;
+    }
+    img, video { opacity: .85; }
+}
+
+textarea,select,input,progress {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+main { padding-top: 2rem; }
+
+body, html {
+    color: var(--text);
+    font-family: var(--example-font);
+    background-color: var(--bg);
+    font-size: 1.09rem;
+    line-height: 1.3;
+    max-width: 638px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 2px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
+}
+
+h2, h3, h4, h5, h6 { margin-top: -0.8rem; }
+
+h1 { font-size: 2.6rem; }
+
+h2 { font-size: 2rem; }
+
+h3 { font-size: 1.8rem; }
+
+h4 { font-size: 1.6rem; }
+
+h5 { font-size: 1.4rem; }
+
+h6 { font-size: 1.2rem; }
+
+header nav {
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1.35rem 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+	padding: 1.2rem;
+    margin-left: 1rem;
+    max-width: 100%;
+	background: var(--accent-bg);
+	border-left: 4px solid #cccccc;
+    font-style: italic;
+}
+  
+cite {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: normal;
+}
+  
+code,pre,pre span,kbd,samp {
+	background: var(--accent-bg);
+	border: 1px solid var(--border);
+	border-radius: 2px;
+	padding: 3px 6px;
+	font-size: .95rem;
+}
+
+pre {
+    padding: 0.6rem;
+	max-width: 100%; 
+    overflow: auto; 
+}
+
+pre code {
+    background: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+code pre {
+    background: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+details {
+    margin-top: 0.64rem;
+    padding: 0.4rem 1rem;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+details[open] { background: var(--accent-bg); cursor: text; }
+details[open] summary { margin-bottom: 0.4rem; }
+summary { font-weight: bold; cursor: pointer; }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    background-color: var(--accent-bg);
+    border: 1px solid var(--border);
+}
+
+tr { border: 1px solid var(--border); }
+
+td {
+    border: 1px solid var(--border);
+    width: 50%;
+    padding-left: 0.5rem;
+    padding: 0.4rem;
+}
+
+hr { margin-bottom: 1.3rem; margin-top: 1.3rem; }
+
+tbody { border: 1px solid var(--border); }
+
+tfoot { font-weight: 700; }
+
+caption { font-weight: 700; }
+  
+kbd {
+    color: var(--preformatted);
+    padding: 0.1rem 0.4rem;
+    margin: 0.2rem;
+}
+
+ul, ol { font-size: 1rem; }
+
+button,
+.button,
+a.button,input[type="submit"],input[type="reset"],input[type="button"],label[type="button"] {
+  border: 1px solid var(--border);
+  background-color: var(--accent-bg);
+  color: var(--accent-text);
+  padding: 4px 8px 4px 8px;
+  text-decoration: none;
+  font-family: var(--mono-font);
+  max-width: 200px;
+  border-radius: 2px;
+}
+
+.button[aria-disabled="true"], 
+input:disabled,textarea:disabled,select:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  background-color: var(--disabled);
+  border-color: var(--disabled);
+  color: var(--text-light);
+  margin: 0;
+}
+
+input[type="range"] { padding: 0; }
+
+abbr[title] {
+    cursor: help;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+dt { font-weight: bold; }
+dd { margin: 0; padding: 0; }
+dd:before { margin-left: 1.2rem; content: ">> "; }
+  
+input {
+	padding: 6px 6px;
+	margin-bottom: .5rem;
+	background: var(--input-bg);
+	color: var(--text);
+	border: 1px solid var(--input-bg);
+	border-radius: 2px;
+	box-sizing: border-box;
+    font-family: var(--mono-font);
+}
+
+button:enabled:hover,
+.button:not([aria-disabled="true"]):hover,
+input[type="submit"]:enabled:hover,input[type="reset"]:enabled:hover,input[type="button"]:enabled:hover,label[type="button"]:hover {
+    background-color: var(--accent-hover);
+    cursor: pointer;
+}
+  
+.button:focus-visible,
+button:focus-visible:where(:enabled),
+input:enabled:focus-visible:where(
+    [type="submit"],
+    [type="reset"],
+    [type="button"]
+  ) {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    margin: 0;
+}
+
+article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: var(--article-bg);
+    border: 0px;
+    border-radius: 4px;
+}
+
+mark { color: white; padding: 3px; background-color: var(--marked); }
+
+article h1, header {
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+    margin-top: 5px;
+}
+
+article p { padding-bottom: 1rem; }
+
+::selection {
+    background: var(--select-bg);
+    color: var(--select-color);
+}
+
+a {
+    letter-spacing: -0.75px;
+    color: var(--link);
+    text-decoration: none;
+}
+a::selection {
+    text-decoration: none;
+    color: var(--link-select-color)
+}
+@media only screen and (max-width: 720px) {
+    body { padding-left: 0.8cm; margin: 0; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.6rem; }
+    h4 { font-size: 1.4rem; }
+    h5 { font-size: 1.2rem; }
+    h6 { font-size: 1rem; }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "nocss",
+  "version": "1.0.0",
+  "description": "noCSS is a CSS framework to write simple websites using normal HTML",
+  "main": "nocss.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utoshu/noCSS.git"
+  },
+  "author": "uto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utoshu/noCSS/issues"
+  },
+  "homepage": "https://github.com/utoshu/noCSS#readme"
+}
