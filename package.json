@@ -7,6 +7,15 @@
     "type": "git",
     "url": "git+https://github.com/utoshu/noCSS.git"
   },
+  "scripts": {
+    "publish": "npm run build && npm publish --access=public"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "web",
+    "website"
+  ],
   "author": "uto",
   "license": "MIT",
   "bugs": {
