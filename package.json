@@ -1,6 +1,6 @@
 {
   "name": "@uto/nocss",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "noCSS is a CSS framework to write simple websites using normal HTML",
   "main": "nocss.min.css",
   "repository": {
