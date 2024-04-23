@@ -1,5 +1,5 @@
 {
-  "name": "no-css",
+  "name": "@uto/nocss",
   "version": "1.0.0",
   "description": "noCSS is a CSS framework to write simple websites using normal HTML",
   "main": "nocss.css",
@@ -12,5 +12,5 @@
   "bugs": {
     "url": "https://github.com/utoshu/noCSS/issues"
   },
-  "homepage": "https://github.com/utoshu/noCSS#readme"
+  "homepage": "https://github.com/utoshu/noCSS"
 }

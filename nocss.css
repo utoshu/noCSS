@@ -9,14 +9,14 @@
     --text: #101010;
     --text-light: #2b2b2b;
     --border: #202020;
-    --select-bg: #6121a6;
+    --select-bg: #039c4a;
     --select-color: #ffffff;
     --link: #200ba8;
     --link-select-color: #000000;
     --disabled: #efefef;
     --article-bg: #e8e8e8;
     --input-bg: #d1d1d1;
-    --marked: #6b00de;
+    --marked: #0bde00;
     }
 @media (prefers-color-scheme: light)
 {
@@ -27,14 +27,14 @@
         --text: #f5f4f4;
         --text-light: #e6e6e6;
         --border: #e6e6e6;
-        --select-bg: #6121a6;
+        --select-bg: #039c4a;
         --select-color: #ffffff;
         --link: #644cff;
         --link-select-color: #8778e4;
         --disabled: #111;
         --article-bg: #121212;
         --input-bg: #171717;
-        --marked: #6b00de;
+        --marked: #0bde00;
     }
     img, video { opacity: .85; }
 }
