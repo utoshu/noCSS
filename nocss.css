@@ -49,7 +49,7 @@ main { padding-top: 2rem; }
 
 body, html {
     color: var(--text);
-    font-family: var(--example-font);
+    font-family: var(--mono-font);
     background-color: var(--bg);
     font-size: 1.09rem;
     line-height: 1.3;
