@@ -8,8 +8,7 @@
     "url": "git+https://github.com/utoshu/noCSS.git"
   },
   "scripts": {
-    "publish": "npm run build && npm publish --access=public",
-    "build": "npx postcss --use autoprefixer css/nocss.css --no-map --output css/nocss.min.css"
+    "publish": "npm publish --access=public"
   },
   "keywords": [
     "css",
