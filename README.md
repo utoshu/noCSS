@@ -11,5 +11,10 @@ noCSS is perfect for those who want-
 
 ## Usage
 
-### CDN
+### cdn
 add: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/utoshu/noCSS@main/nocss.css">` to the bottom of your `<head>` in your HTML
+
+### npm
+```
+npm i @uto/nocss
+```
