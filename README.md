@@ -12,7 +12,7 @@ noCSS is perfect for those who want-
 ## Usage
 
 ### cdn
-add: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/utoshu/noCSS@main/nocss.css">` to the bottom of your `<head>` in your HTML
+add: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uto/nocss@1.0.5/nocss.min.css">` to the bottom of your `<head>` in your HTML
 
 ### npm
 ```
